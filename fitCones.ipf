@@ -19,7 +19,7 @@ function fitCones()
 	//3 - m_V
 	//4 - E-shift_C
 	//5 - E-shift_V
-	//6	 - E0+delta E Conduction
+	//6 - E0+delta E Conduction
 	//7 - E0+delta E Valence
 	//8 - measured Dirac point
 	//9 - k separation
@@ -27,12 +27,6 @@ function fitCones()
 	constlist_bands[0] = dimsize(root:$graphToFit, 0)
 	constlist_bands[1] = DimOffset(root:$graphToFit, 0)
 	constlist_bands[2] = DimDelta(root:$graphToFit, 0)
-	//constlist_bands[3] = 0
-	//constlist_bands[4] = 0
-	//constlist_bands[5] = 0
-	// 3 - initial X
-	// 4 - initial T
-	// 5 - E0
 	cones_panel()
 	
 	

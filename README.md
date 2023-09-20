@@ -1,7 +1,7 @@
 # IgorPro-tools-ARPES
 Set of Igor Pro and Python scripts for ARPES data processing.
 Igor Pro scripts are used to: 
-1. fitBands - fit valence and conduction band of $Pb_{1-x}Sn_{x}Se.
+1. fitBands - fit valence and conduction band of $Pb_{1-x}Sn_{x}Se$.
 2. fitCones - dynamically fit surface states of (001)-oriented sample near $\bar X$ point.
 3. fitRashbaH - dynamically fit Rashba-split surface states and topological surface states.
 4. resizeGraphs - resize multiple ARPES images for easier comparision of the spectra.

@@ -91,7 +91,6 @@ function cones_panel()
 	
 	SetVariable setvarEV title="∆E\B0", pos={365,110},size={75,18},value= varlist_bands[1], limits={-0.5, 0.5,0.001}, proc = setChangeEV_D
 	SetVariable setvarMV title="m\SV\M\Bt", pos={365,150},size={75,18},value= varlist_bands[3], limits={0, 0.1,0.0001}, proc = setChangeMV_D
-	//SetVariable setvarSchiftK title="k shift", pos={135,180},size={90,18},value= varlist_bands[2], limits={0,0.4,0.001}, proc = setShiftK_B
 	SetVariable setvarschiftEV title="E shift", pos={350,190},size={90,18},value= varlist_bands[5], limits={-1,0,0.001}, proc = setShiftEV_D
 	
 	Slider sliderSchiftK pos={25,230},size={100,20},vert=0,side=0,ticks=0,limits={0,0.4,0.001},value = varlist_bands[9], proc = shiftK_D
@@ -143,7 +142,7 @@ end
 function changeEC_D(ctrlName, sliderValueEC, event) : SliderControl
 	string ctrlName
 	variable sliderValueEC
-	variable event	// bit field: bit 0: value set, 1: mouse down, 2: mouse up, 3: mouse moved
+	variable event
 	wave varlist_bands
 	if(event %& 0x1)
 		varlist_bands[0]=sliderValueEC
@@ -154,7 +153,7 @@ end
 function changeEV_D(ctrlName, sliderValueEV, event) : SliderControl
 	string ctrlName
 	variable sliderValueEV
-	variable event	// bit field: bit 0: value set, 1: mouse down, 2: mouse up, 3: mouse moved
+	variable event
 	wave varlist_bands
 	if(event %& 0x1)
 		varlist_bands[1]=sliderValueEV
@@ -165,7 +164,7 @@ end
 function changeMC_D(ctrlName, sliderValueMC, event) : SliderControl
 	string ctrlName
 	variable sliderValueMC
-	variable event	// bit field: bit 0: value set, 1: mouse down, 2: mouse up, 3: mouse moved
+	variable event
 	wave varlist_bands
 	if(event %& 0x1)
 		varlist_bands[2]=sliderValueMC
@@ -176,7 +175,7 @@ end
 function changeMV_D(ctrlName, sliderValueMV, event) : SliderControl
 	string ctrlName
 	variable sliderValueMV
-	variable event	// bit field: bit 0: value set, 1: mouse down, 2: mouse up, 3: mouse moved
+	variable event
 	wave varlist_bands
 	if(event %& 0x1)
 		varlist_bands[3]=sliderValueMV
@@ -187,7 +186,7 @@ end
 function shiftEC_D(ctrlName, sliderValueShiftEC, event) : SliderControl
 	string ctrlName
 	variable sliderValueShiftEC
-	variable event	// bit field: bit 0: value set, 1: mouse down, 2: mouse up, 3: mouse moved
+	variable event
 	wave varlist_bands
 	if(event %& 0x1)
 		varlist_bands[4]=sliderValueShiftEC
@@ -198,7 +197,7 @@ end
 function shiftEV_D(ctrlName, sliderValueShiftEV, event) : SliderControl
 	string ctrlName
 	variable sliderValueShiftEV
-	variable event	// bit field: bit 0: value set, 1: mouse down, 2: mouse up, 3: mouse moved
+	variable event
 	wave varlist_bands
 	if(event %& 0x1)
 		varlist_bands[5]=sliderValueShiftEV
@@ -209,7 +208,7 @@ end
 function shiftK_D(ctrlName, sliderValueShiftK, event) : SliderControl
 	string ctrlName
 	variable sliderValueShiftK
-	variable event	// bit field: bit 0: value set, 1: mouse down, 2: mouse up, 3: mouse moved
+	variable event
 	wave varlist_bands
 	if(event %& 0x1)
 		varlist_bands[9]=sliderValueShiftK

@@ -7,5 +7,5 @@ Igor Pro scripts are used to:
 4. resizeGraphs - resize multiple ARPES images for easier comparision of the spectra.
 ---
 Python ARPES_3D_cubes script is used to prepare properly cut 2D images intended for making 3D cube ARPES image.
-The script uses [igor.py](https://github.com/wking/igor) module to read ibw. files generated during experiments at [URANOS](https://synchrotron.uj.edu.pl/en_GB/linie-badawcze/uranos) beamline at National Synchrotron Radiation Centre SOLARIS in Kraków, Poland.
+The script uses [igor.py](https://github.com/wking/igor) module to read ibw. files generated during experiments at [URANOS](https://synchrotron.uj.edu.pl/en_GB/linie-badawcze/uranos) beamline at National Synchrotron Radiation Centre [SOLARIS](https://synchrotron.uj.edu.pl/en_GB/start) in Kraków, Poland.
 User can set the boundaries of the reciprocal space and energy to obtain 3D cube image of the collected data.
